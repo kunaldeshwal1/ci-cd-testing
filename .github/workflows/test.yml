@@ -33,6 +33,6 @@ jobs:
 
       - name: Run integration script
         run: |
-          docker compose up -d
+          docker-compose up -d
           npm run test:integration
-          docker compose down
+          docker-compose down
